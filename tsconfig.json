@@ -1,13 +1,25 @@
 {
   "compilerOptions": {
     "outDir": "./dist/",
+    "baseUrl": "./",
+    "paths": {
+      "base/*": ["src/*"],
+      "assets/*": ["src/assets/*"]
+    },
     "noImplicitAny": true,
     "module": "es6",
     "target": "es5",
     "jsx": "react",
     "allowJs": true,
+    "strict": true,
     "sourceMap": true,
+    "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "lib": ["es5", "es6", "es2017", "dom"],
+    "typeRoots": [
+      "node_modules/@types"
+    ]
   },
   "exclude": [
     "node_modules"

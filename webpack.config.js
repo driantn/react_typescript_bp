@@ -37,8 +37,13 @@ const scssModule = {
   ]
 };
 
+const srcPath = (subdir) => {
+  return path.join(__dirname, "./src", subdir);
+}
+
 const resolveAlias = {
-  app: path.resolve(__dirname, 'src/'),
+  base: srcPath('./'),
+  assets: srcPath('assets'),
 };
 
 const resolveExtensions = [ '.tsx', '.ts', '.js', '.scss' ];

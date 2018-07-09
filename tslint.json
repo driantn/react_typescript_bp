@@ -1,3 +1,9 @@
 {
-  "extends": "tslint-config-airbnb"
+  "extends": ["tslint-config-airbnb", "tslint-react"],
+  "rules": {
+    "import-name": false,
+    "variable-name": false,
+    "prefer-array-literal": [ true, { "allow-type-parameters": true } ],
+    "align": false
+ }
 }
